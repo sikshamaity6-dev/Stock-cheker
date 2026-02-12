@@ -1,55 +1,54 @@
 # Shein Wishlist Checker Bot
 
 ## Overview
-The Shein Wishlist Checker Bot is a tool designed to help users monitor their Shein wishlists. It alerts users when items from their wishlist go on sale or become available.
+The Shein Wishlist Checker Bot is an application that allows users to monitor their Shein wishlist and receive notifications about price changes and item availability. This bot is built using Python and utilizes the Shein API to automate the process of checking the wishlist.
 
-## Features
-- **Real-time Monitoring**: Keeps track of wishlist items.
-- **Price Alerts**: Notifies when there are changes in prices.
-- **Availability Notifications**: Alerts when out-of-stock items come back in stock.
+## Setup Instructions
 
-## Prerequisites
-- Python 3.6 or higher
-- Basic knowledge of how to use command-line interfaces
+### Prerequisites
+Before you begin, ensure you have the following software installed:
+- Python 3.7 or higher
+- pip (Python package installer)
 
-## Installation
-1. **Clone the repository**:
+### Installation Steps
+1. **Clone the repository**
    ```bash
    git clone https://github.com/sikshamaity6-dev/Stock-cheker.git
    cd Stock-cheker
    ```
-2. **Install the required packages**:
+
+2. **Install dependencies**
+   Use pip to install the required packages. It's recommended to create a virtual environment first:
    ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use 'venv\Scripts\activate'
    pip install -r requirements.txt
    ```
 
-## Configuration
-- Create a configuration file named `config.json` in the root directory with the following structure:
-   ```json
-   {
-     "wishlist_items": [
-       "item_url_1",
-       "item_url_2"
-     ],
-     "notification_settings": {
-       "email": true,
-       "sms": false
-     }
-   }
+3. **Set up environment variables**  
+   Create a `.env` file in the root of the project and add the following variables:
+   ```
+   SHEIN_EMAIL=your_email@example.com
+   SHEIN_PASSWORD=your_password
+   ```
+   Replace `your_email@example.com` and `your_password` with your Shein account credentials.
+
+4. **Run the Bot**
+   To start the bot, run:
+   ```bash
+   python main.py
    ```
 
-## Usage
-1. **Run the bot**:
-   ```bash
-   python shein_wishlist_checker.py
-   ```
-2. **Check your notifications**: Set up your preferred notification method as specified in the configuration file.
+5. **Check Your Wishlist**  
+   The bot will automatically check your wishlist at specified intervals and alert you of any changes.
+
+## Usage Instructions
+- Ensure that the bot is running to receive notifications.
+- You can customize the check interval in the `config.py` file.
+- For troubleshooting, check the logs in the `logs/` directory.
 
 ## Contribution
-Feel free to submit pull requests for any new features or bug fixes.
+Contributions are welcome! Please open an issue or submit a pull request with your suggestions and improvements.
 
 ## License
-This project is licensed under the MIT License.
-
-## Acknowledgments
-- Thanks to all contributors and the open-source community.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
