@@ -1,1 +1,1 @@
-{"telegram_token": "8375775362:AAHLP1R9Fb9PTTtlUsKFwo9YqJj2Y0OQw28", "chat_id": "7725279323", "shein_wishlist_url": "https://www.sheinindia.in/wishlist"}
+{"wishlist_urls": ["https://www.sheinindia.in/wishlist"], "poll_interval_seconds": 300, "telegram_token": "8375775362:AAHLP1R9Fb9PTTtlUsKFwo9YqJj2Y0OQw28", "telegram_chat_id": "7725279323", "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36"}
